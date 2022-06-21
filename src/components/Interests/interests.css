@@ -1,0 +1,47 @@
+.interests__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.interests__container > div {
+  background: var(--color-bg-variant);
+  padding: 1.4rem 5rem;
+  border-radius: 2rem;
+  border: transparent;
+  transition: var(--transition);
+}
+.interests__container > div:hover {
+  background: transparent;
+  border: 1px solid white;
+  cursor: default;
+}
+.interests__container > div:hover .interests__details-icon {
+  color: var(--color-primary);
+}
+.interests__details-icon {
+  margin-top: 6px;
+  text-align: center;
+  width: 100%;
+  font-size: 1.7rem;
+}
+.single__card {
+  text-align: center;
+  margin: 2rem;
+}
+
+/*=============MEDIA QUERIES TAB=====================*/
+
+@media screen and (max-width: 1024px) {
+  .interests__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/*=============MEDIA QUERIES MOB=====================*/
+
+@media screen and (max-width: 600px) {
+  .interests__container {
+    grid-template-columns: 1fr;
+  }
+  #interests {
+    margin-top: 5rem;
+  }
+}

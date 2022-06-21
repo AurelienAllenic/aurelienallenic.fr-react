@@ -1,0 +1,84 @@
+.portfolio__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.portfolio__item {
+  background: var(--color-bg-variant);
+  padding: 1.2rem;
+  border-radius: 2rem;
+  border: transparent;
+  transition: var(--transition);
+}
+
+.portfolio__item:hover {
+  border: 1px solid white;
+  background: transparent;
+}
+
+.portfolio__item-image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.portfolio__item h3 {
+  margin: 1.2rem 0 2rem;
+}
+.portfolio__item-cta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.btn-white {
+  width: max-content;
+  display: inline-block;
+  color: var(--color-white);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-white);
+  transition: var(--transition);
+}
+.btn-white:hover {
+  background: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
+}
+.sepia:hover {
+  animation: sepia both 1s;
+}
+
+@keyframes sepia {
+  25% {
+    filter: sepia(20%);
+  }
+  50% {
+    filter: sepia(40%);
+  }
+  75% {
+    filter: sepia(60%);
+  }
+  100% {
+    filter: sepia(70%);
+  }
+}
+/*=============MEDIA QUERIES TAB=====================*/
+
+@media screen and (max-width: 1024px) {
+  .portfolio__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+}
+/*=============MEDIA QUERIES MOB=====================*/
+
+@media screen and (max-width: 600px) {
+  .portfolio__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  #portfolio {
+    margin-top: 5rem;
+  }
+}

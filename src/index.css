@@ -43,7 +43,7 @@ body {
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url(../src/assets/texture.jpg);
+  background-image: url(../src/assets/texture.webp);
   background-size: cover;
   background-position: center;
 }
@@ -122,11 +122,14 @@ img {
   }
 }
 /*=============MEDIA QUERIES MOB=====================*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
   .container {
     width: var(--container-width-sm);
   }
   section > h2 {
     margin-top: 2rem;
+  }
+  body {
+    background-image: url(../src/assets/texture-mob.png);
   }
 }

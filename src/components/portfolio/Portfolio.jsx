@@ -1,11 +1,11 @@
 import React from 'react'
 import './portfolio.css'
-import Booki from '../../assets/booki.jpg'
+import Booki from '../../assets/booki.webp'
 import Ohmyfood from '../../assets/ohmyfood.jpg'
 import Lapanthere from '../../assets/lapanthere.jpg'
-import Kanap from '../../assets/kanap.jpg'
-import Piiquante from '../../assets/piiquante.jpg'
-import Groupomania from '../../assets/groupomania.jpg'
+import Kanap from '../../assets/kanap.webp'
+import Piiquante from '../../assets/piiquante.webp'
+import Groupomania from '../../assets/groupomania.webp'
 
 const data = [
   {

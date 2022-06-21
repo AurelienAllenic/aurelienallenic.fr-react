@@ -86,11 +86,11 @@ p {
 
 @media screen and (max-width: 600px) {
   .about__me {
-    width: 65%;
+    width: 50%;
     margin: 0 auto 3rem;
   }
   .about__cards {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
   .about__content {

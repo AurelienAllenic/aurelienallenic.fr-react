@@ -13,6 +13,10 @@
 :root {
   --color-bg: #1f1f38;
   --color-bg-variant: linear-gradient(transparent, var(--color-primary));
+  --color-bg-variant-reversed: linear-gradient(
+    var(--color-primary),
+    transparent
+  );
   --color-primary: #c5382e;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;

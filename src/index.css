@@ -112,13 +112,26 @@ img {
 }
 
 /*=============MEDIA QUERIES TAB=====================*/
-
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .me {
+    bottom: 100px;
+  }
+  .sroll__down {
+    bottom: 9rem;
+  }
+  .header__socials {
+    bottom: 7rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    height: 80vh;
+  }
   .container {
     width: var(--container-width-md);
   }
   section {
-    margin-top: 6rem;
+    margin-top: 3rem;
   }
 }
 /*=============MEDIA QUERIES MOB=====================*/
@@ -129,7 +142,35 @@ img {
   section > h2 {
     margin-top: 2rem;
   }
+}
+/*=============MEDIA QUERIES MOB SMALL=====================*/
+@media screen and (min-width: 350px) and (max-width: 413px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+  section > h2 {
+    margin-top: 2rem;
+  }
+  .me {
+    bottom: -70px;
+  }
+}
+/*=============MEDIA QUERIES LANDSCAPE=====================*/
+@media screen and (orientation: landscape) and (min-device-width: 320px) and (max-device-width: 800px) {
+  .me {
+    display: none;
+  }
   body {
-    background-image: url(../src/assets/texture-mob.png);
+    justify-content: center;
+  }
+}
+@media screen and (orientation: landscape) and (min-device-width: 767px) and (max-device-width: 1200px) {
+  .me {
+    bottom: -70px;
+  }
+}
+@media screen and (orientation: landscape) and (min-device-width: 767px) and (max-device-width: 1024px) {
+  header {
+    height: 102vh;
   }
 }

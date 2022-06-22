@@ -142,6 +142,9 @@ img {
   section > h2 {
     margin-top: 2rem;
   }
+  body {
+    background-image: url(../src/assets/texture.jpg);
+  }
 }
 /*=============MEDIA QUERIES MOB SMALL=====================*/
 @media screen and (min-width: 350px) and (max-width: 413px) {
@@ -154,6 +157,9 @@ img {
   .me {
     bottom: -70px;
   }
+  body {
+    background-image: url(../src/assets/texture.jpg);
+  }
 }
 /*=============MEDIA QUERIES LANDSCAPE=====================*/
 @media screen and (orientation: landscape) and (min-device-width: 320px) and (max-device-width: 800px) {
@@ -162,15 +168,25 @@ img {
   }
   body {
     justify-content: center;
+    background-image: url(../src/assets/texture.jpg);
   }
 }
 @media screen and (orientation: landscape) and (min-device-width: 767px) and (max-device-width: 1200px) {
   .me {
-    bottom: -70px;
+    display: none;
+  }
+  body {
+    background-image: url(../src/assets/texture.jpg);
   }
 }
 @media screen and (orientation: landscape) and (min-device-width: 767px) and (max-device-width: 1024px) {
   header {
     height: 102vh;
+  }
+  .me {
+    display: none;
+  }
+  body {
+    background-image: url(../src/assets/texture.jpg);
   }
 }
